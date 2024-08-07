@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="container"></div>
+    <div id="konten"></div>
+    <div id="judul"></div> -->
+
+    <button onclick="tambahjudul()">aku sayang ditrian</button>
+    <div id="container"></div>
+    
+     <script>
+     //cara 1
+    //    var container= document.getElementById("container")
+    //    var gambar = document.createElement("img");
+    //       gambar.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRneFTd9ljEtvAh6wY6YkWHO7q8HQye68hBpA&usqp=CAU"
+        
+    //     container.append(gambar)
+       
+    //    var konten= document.getElementById("konten");
+    //    var p= document.createElement("h1")
+    //        p.innerText="hallo"
+    //        konten.append(p);
+      
+    //   //cara2
+    //   var judul=document.getElementById("judul"
+    //   ); 
+    //   judul.innerHTML="<p>hallo</p>";
+
+    function tambahjudul(){
+            //ambil element yang jadi parent / wadah
+            var container = document.getElementById("container");
+            var text = "aku sayang kamu";
+             container.innerHTML += `<h1> ${text} <h1>`;
+    
+        }
+     </script>
+</body>
+</html>

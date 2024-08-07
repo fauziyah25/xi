@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <h1 id="judul">Silahkan Dipencet!</h1>
+    <h1 id="angka">0</h1>
+    <button onclick="tambah()">Tambah</button>
+    <button onclick="kurang()">Kurang</button>
+  
+    <script>
+      var angkaElement = document.getElementById('angka');
+      var angka = 0;
+
+      function tambah() {
+        if (angka == 10) {
+          document.body.style.color = "green";
+          alert("You Win!!");
+        } else {
+          angka += 1;
+          updateAngka();
+        }
+        if (angka == 0) {
+          document.body.style.color = "red";
+        } else if (angka == 10) {
+          document.body.style.color = "green";
+        } else {
+          document.body.style.color = "brown";
+        }
+      }
+
+      function kurang() {
+        if (angka == 0) {
+          document.body.style.color = "red";
+          alert("Anda tidak bisa mengurangi lagi");
+        } else {
+          angka -= 1;
+          updateAngka();
+        }
+        if (angka == 0) {
+          document.body.style.color = "red";
+        } else if (angka == 10) {
+          document.body.style.color = "green";
+        } else {
+          document.body.style.color = "black";
+        }
+      }
+
+      function updateAngka() {
+        angkaElement.innerText = angka;
+      }
+    </script>
+</body>
+</html>

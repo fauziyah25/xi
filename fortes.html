@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="pertama">
+    <script>
+      var utama = document.getElementById("pertama");
+      var data = [
+                  {
+                     nama : "siti",
+                     kelas : " 12",
+                     jurusan : "RPL",
+                     umur : "12 Tahun"
+                  },
+                  
+                  {
+                     nama : "asep",
+                     kelas : " 11",
+                     jurusan : "RPL",
+                     umur : "15 Tahun"
+                  },
+                  
+                 {
+                     nama : "zahra",
+                     kelas : " 12",
+                     jurusan : "RPL",
+                     umur : "14 Tahun"
+                  },
+                  
+                  {
+                     nama : "sutan",
+                     kelas : " 10",
+                     jurusan : "RPL",
+                     umur : "10 Tahun"
+                  },
+                  
+               ];
+               
+        data.forEach(function (list) {
+          utama.innerHTML += `<hr> <br> <h1>${list.nama}</h1> </br> kelas :${list.kelas} </br> jurusan :${list.jurusan}</br> umur : ${list.umur}</hr>`
+        });
+    </script>
+    
+</body>
+</html>

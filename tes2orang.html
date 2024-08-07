@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        .n1{
+           
+            width:100px ;
+            height: 100px;
+            background-color: black;
+            margin: 15px;
+            
+        }
+        .flex{
+            display: flex;
+        }
+        .n2{
+        width:100px ;
+        height: 100px;
+        background-color: blue;
+        margin: 15px;
+        }
+
+        .n3{
+        width:100px ;
+        height: 100px;
+        background-color: red;
+        margin: 15px;
+
+        }
+
+        .n4{
+        width:100px ;
+        height: 100px;
+        background-color: yellow;
+        margin: 15px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="n1" id="a1"></div>
+    <div class="flex">
+    <div class="n2" onclick="code()"></div>
+    <div class="n3" onclick="code2()"></div>
+    <div class="n4"  onclick="code3()"></div>
+
+    </div>
+    <script>
+        function code(){
+      var kotak = document.getElementById("a1")
+            kotak.classList.add("n2")
+            kotak.classList.remove("n1")
+            kotak.classList.remove("n3")
+            kotak.classList.remove("n4")
+        }
+        function code2(){
+      var kotak = document.getElementById("a1")
+            kotak.classList.add("n3")
+            kotak.classList.remove("n1")
+            kotak.classList.remove("n2")
+            kotak.classList.remove("n4")
+        }
+        function code3(){
+      var kotak = document.getElementById("a1")
+            kotak.classList.add("n4")
+            kotak.classList.remove("n1")
+            kotak.classList.remove("n2")
+            kotak.classList.remove("n3")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tempat">
+
+    </div>
+    <script>
+        let tempat = document.getElementById("tempat");
+
+        async function getData(){
+                tempat.innerHTML =  "<span class='loader'></span>";
+                const response = await fetch("https://quran-api-id.vercel.app/surahs")
+                const data = await response.json();
+                console.log(data[0]);
+
+                data.forEach(element => {
+                    tempat.innerHTML += `
+                        <h1>Nama Surah : ${element.name}</h1>
+                        <p>Deskripsi : ${element.description} </p>
+                    `
+                });
+        }
+
+        getData()
+    </script>
+</body>
+</html>

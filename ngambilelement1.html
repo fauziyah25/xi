@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="input" value="membaca">
+   <button onclick="tambahlist()">tambah</button>
+    
+   <ul id="wadah_list">
+        <li>list satu</li>
+   </ul>
+
+   <script>
+    var inputText = document.getElementById("input")
+    var wadah = document.getElementById("wadah_list")
+
+    function tambahlist(){
+         let nilai_input = inputText.value
+        wadah.innerHTML += "<li>"  + nilai_input +  "</li>"
+    }
+   </script>
+</body>
+</html>

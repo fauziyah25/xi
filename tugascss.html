@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class siswa{
+            name = "zee"
+            nis = 123456
+            school = "SMK  MUTU"
+            mapel = "Kejuruan"
+
+            belajar(){
+                return "Sedang Belajar";
+            }
+        }
+                
+        var siswa1 = new siswa()
+        document.write(siswa1.name+'<br />');
+        document.write(siswa1.belajar()+'<br />')
+        document.write(siswa1.nis+'<br />');
+        document.write(siswa1.school+'<br />');
+        document.write(siswa1.mapel+'<br />'+'<hr />');
+
+        class siswaRPL{
+            nama = "Jeon"
+            nis = 1464567
+            sekolah = "SMK"
+            mapel = "PBB" 
+            Jurusan = "RPLS"
+            mapel_produktif = "Kejurusan"
+
+            belajar_produktif(){
+                return "Sedang tidur";
+            }
+
+        }
+
+        var siswaRPL1 = new siswaRPL()
+        document.write(siswaRPL1.nama+"<br />") 
+        document.write(siswaRPL1.belajar_produktif()+"<br />")
+        document.write(siswaRPL1.nis+"<br />")
+        document.write(siswaRPL1.sekolah+"<br />")
+        document.write(siswaRPL1.mapel+"<br />")
+        document.write(siswaRPL1.Jurusan+"<br />")
+        document.write(siswaRPL1.mapel_produktif+"<br />")
+    </script>
+</body>
+</html>
